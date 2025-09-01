@@ -6,12 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".ActivityResult"
     android:id="@+id/background_screen">
+
+    <!-- Text di tengah layar -->
     <TextView
         android:id="@+id/color_code_result_message"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/text_display"
+        android:textColor="@color/white"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        style="@style/text_display"
-        android:textColor="@color/white"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Tombol di bagian bawah layar -->
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="182dp"
+        android:layout_height="49dp"
+        style="@style/button"
+        android:text="BACK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="64dp"/> <!-- jarak 64dp dari bawah -->
+    <!-- jarak dari bawah -->
+
 </androidx.constraintlayout.widget.ConstraintLayout>
